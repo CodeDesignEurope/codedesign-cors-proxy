@@ -9,6 +9,7 @@ var port = process.env.PORT || 8080;
 // use originWhitelist instead.
 var originBlacklist = parseEnvList(process.env.CORSANYWHERE_BLACKLIST);
 var originWhitelist = ['http://localhost:8100', 'capacitor://localhost', 'ionic://localhost', 'http://localhost'];
+
 function parseEnvList(env) {
   if (!env) {
     return [];
